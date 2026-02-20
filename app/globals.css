@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.55;
+  letter-spacing: -0.006em;
+}
+
+/* ENGINEERED HEADINGS */
+h1 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+h3 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Body copy */
+p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Numbers look industrial */
+.number, .stat, time {
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+/* Remove top Google bar */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+}
+
+/* Hide Google branding */
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget span {
+  display: none !important;
+}
+
+/* Style dropdown to match header */
+.goog-te-combo {
+  background: black;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 4px 6px;
+  font-size: 12px;
+}
+/* ===== GOOGLE TRANSLATE - FULLY HIDDEN (ENGINE ONLY) ===== */
+
+/* Hide full widget container */
+#google_translate_element {
+  display: none !important;
+}
+
+/* Hide top banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Prevent page shift after translate */
+body {
+  top: 0 !important;
+}
+
+/* Hide Google logo + branding */
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-gadget,
+.goog-te-gadget-simple {
+  display: none !important;
+}
+
+/* Hide dropdown completely */
+.goog-te-combo {
+  display: none !important;
+}
+/* Hide Google Translate top bar */
+body {
+  top: 0 !important;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}

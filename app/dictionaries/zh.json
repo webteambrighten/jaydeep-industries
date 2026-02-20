@@ -1,0 +1,36 @@
+{
+  "nav_about": "关于我们",
+  "nav_products": "织造解决方案",
+  "nav_feedback": "反馈与咨询",
+  "nav_success": "成功案例",
+  "nav_contact": "联系我们",
+
+  "hero_badge": "可靠性 • 质量 • 售后服务",
+  "hero_title_1": "高精度",
+  "hero_title_2": "综丝",
+  "hero_title_3": "用于高性能织造",
+  "hero_scroll": "滚动",
+
+  "about_legacy_badge": "SWASTIK 传承",
+  "about_since": "自1976年",
+  "about_years_number": "50+",
+  "about_years_label": "卓越年数",
+  "about_title_part1": "可靠性 • 质量",
+  "about_title_part2": "服务",
+  "about_description": "自1976年以来，Jaydeep Industries 一直处于纺织行业前沿，其SWASTIK品牌产品以高精度和耐用性享誉全球。",
+
+  "products_badge": "工业展示",
+  "products_title_1": "产品",
+  "products_title_2": "系列",
+  "products_button": "技术规格",
+
+  "cta_title": "携手共创成功",
+  "cta_description": "无论是咨询、定制解决方案还是反馈，我们的团队随时为您服务。",
+  "cta_button_inquiry": "发送咨询",
+  "cta_button_call": "立即致电",
+
+  "ach_badge": "认证与荣誉",
+  "ach_title_1": "卓越",
+  "ach_title_2": "实力",
+  "ach_footer": "政府认可成就"
+}
