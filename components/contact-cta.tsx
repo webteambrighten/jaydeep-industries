@@ -41,7 +41,7 @@ export default function ContactCta() {
               variant="outline"
               className="!border-2 !border-white !text-white !bg-transparent !hover:bg-white !hover:text-[#000000] !font-bold !rounded-xl !px-8 !py-3 !shadow-lg !hover:shadow-xl !transition-all !duration-300"
             >
-              <Link href="tel:+91XXXXXXXXXX">
+              <Link href="tel:+919825311311">
                 <PhoneCall className="mr-2 h-5 w-5" />
                 Call Us Now
               </Link>

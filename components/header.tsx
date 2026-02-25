@@ -12,16 +12,8 @@ import {
   MessageSquare,
   Star,
   Phone,
-  Home,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const bottomNavigation = [
-  { label: "Home", href: "/", icon: Home },
-  { label: "About", href: "/about", icon: Info },
-  { label: "Product", href: "/products", icon: ShoppingBag },
-  { label: "Contact", href: "/contact", icon: Phone },
-];
 
 const detailedNavigation = [
   { label: "About Us", href: "/about", icon: Info },
@@ -40,14 +32,6 @@ const languages = [
   { code: "ko", label: "한국어" },
 ];
 
-// Declare global type for Google Translate
-declare global {
-  interface Window {
-    googleTranslateElementInit: () => void;
-    google: any;
-  }
-}
-
 export default function MainHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -57,7 +41,7 @@ export default function MainHeader() {
   const isHomePage = pathname === "/";
   const shouldBeSolid = !isHomePage || scrolled;
 
-  // Load Google Translate script once
+  // Google translate load
   useEffect(() => {
     if (document.getElementById("google-translate-script")) return;
 
@@ -74,22 +58,15 @@ export default function MainHeader() {
 
     const script = document.createElement("script");
     script.id = "google-translate-script";
-    script.src =
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
     script.async = true;
     document.body.appendChild(script);
   }, []);
 
-  // Trigger Google Translate via the hidden combo select
   const changeLanguage = (lang: string) => {
     setCurrentLang(lang);
-
-    // Small delay to ensure Google Translate widget is ready
     setTimeout(() => {
-      const select = document.querySelector(
-        ".goog-te-combo"
-      ) as HTMLSelectElement | null;
-
+      const select = document.querySelector(".goog-te-combo") as HTMLSelectElement | null;
       if (select) {
         select.value = lang;
         select.dispatchEvent(new Event("change"));
@@ -107,34 +84,46 @@ export default function MainHeader() {
 
   return (
     <>
-      {/* Hidden Google Translate widget — we use our own UI */}
       <div id="google_translate_element" className="hidden" />
 
-      {/* HEADER */}
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          shouldBeSolid
-            ? "bg-black/95 backdrop-blur-lg shadow-2xl"
-            : "bg-transparent"
+          shouldBeSolid ? "bg-black/95 backdrop-blur-lg shadow-2xl" : "bg-transparent"
         }`}
       >
         <nav className="mx-auto max-w-[1800px] px-6 lg:px-12 flex justify-between items-center h-24 md:h-28">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          
+          {/* ✅ LOGO SECTION - Responsive Behavior */}
+          <div className="flex items-center gap-2 md:gap-4">
+            {/* Primary Logo (Jaydeep) */}
+            <Link href="/" className="flex-shrink-0">
+              <Image
+                src="/logo.png"
+                alt="Jaydeep Industries"
+                width={120}
+                height={120}
+                className="h-14 w-14 md:h-20 md:w-20 object-contain"
+                priority
+              />
+            </Link>
+
+            {/* Brand Logo (Swastik) 
+                - On Mobile: Appears here next to primary logo
+                - On PC: Visible if you want them together, otherwise use the desktop-only block below */}
             <Image
-              src="/logo.png"
-              alt="Jaydeep Industries"
-              width={120}
-              height={120}
-              className="h-16 w-16 md:h-20 md:w-20 object-contain"
+              src="/swastik-logo-removebg-preview1.png"
+              alt="Brand Logo"
+              width={200}
+              height={200}
+              className="h-14 w-14 md:h-20 md:w-20 object-contain brightness-110 flex lg:hidden" 
               priority
             />
-          </Link>
+          </div>
 
-          {/* Desktop Nav */}
+          {/* ✅ DESKTOP NAV */}
           <div className="hidden lg:flex items-center space-x-1">
             {detailedNavigation.map((item, index) => (
               <motion.div
@@ -154,13 +143,22 @@ export default function MainHeader() {
             ))}
           </div>
 
-          {/* Right Side */}
-          <div className="flex items-center gap-6">
-            {/* Desktop Language Selector */}
+          {/* ✅ RIGHT SIDE */}
+          <div className="flex items-center gap-4">
+            {/* Desktop Brand Logo - Shows only on PC to maintain original placement */}
+            <Image
+              src="/swastik-logo-removebg-preview1.png"
+              alt="Brand Logo"
+              width={200}
+              height={200}
+              className="h-20 w-20 object-contain brightness-110 hidden lg:flex"
+              priority
+            />
+
+            {/* Desktop Language */}
             <select
               value={currentLang}
               onChange={(e) => changeLanguage(e.target.value)}
-              translate="no"
               className="hidden md:block bg-black border border-white/30 text-white text-xs px-2 py-1 rounded cursor-pointer notranslate"
             >
               {languages.map((lang) => (
@@ -170,56 +168,18 @@ export default function MainHeader() {
               ))}
             </select>
 
-            {/* Swastik Logo */}
-            <div className="relative">
-              <Image
-                src="/swastik-logo-removebg-preview1.png"
-                alt="Brand Logo"
-                width={200}
-                height={200}
-                className="h-20 w-20 md:h-24 lg:h-28 lg:w-28 object-contain brightness-110 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
-                priority
-              />
-            </div>
+            {/* HAMBURGER (mobile only) */}
+            <button
+              onClick={() => setMobileMenuOpen(true)}
+              className="lg:hidden text-white bg-white/10 p-3 rounded-full active:scale-90 transition-transform"
+            >
+              <Menu size={24} />
+            </button>
           </div>
         </nav>
       </motion.header>
 
-      {/* MOBILE FLOATING DOCK */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] w-[95%] max-w-md lg:hidden">
-        <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          className="bg-black/85 backdrop-blur-2xl border border-white/20 rounded-full p-2 flex items-center justify-around shadow-2xl"
-        >
-          {bottomNavigation.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className={`flex flex-col items-center p-3 transition-all ${
-                pathname === item.href ? "text-[#da222a]" : "text-white/60"
-              }`}
-            >
-              <item.icon size={20} />
-              <span className="text-[9px] font-black uppercase mt-1 tracking-tighter">
-                {item.label}
-              </span>
-            </Link>
-          ))}
-
-          <button
-            onClick={() => setMobileMenuOpen(true)}
-            className="flex flex-col items-center p-3 text-white/60"
-          >
-            <Menu size={20} />
-            <span className="text-[9px] font-black uppercase mt-1 tracking-tighter">
-              Menu
-            </span>
-          </button>
-        </motion.div>
-      </div>
-
-      {/* MOBILE MENU */}
+      {/* MOBILE MENU (unchanged) */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -261,46 +221,22 @@ export default function MainHeader() {
               ))}
             </nav>
 
-            {/* Mobile Language Buttons */}
-            <div className="space-y-10">
-              <div className="grid grid-cols-3 gap-3" translate="no">
-                {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    translate="no"
-                    onClick={() => {
-                      changeLanguage(lang.code);
-                      setMobileMenuOpen(false);
-                    }}
-                    className={`py-4 border font-bold uppercase text-[10px] rounded transition-all
-                      ${
-                        currentLang === lang.code
-                          ? "bg-[#da222a] border-[#da222a] text-white"
-                          : "bg-white/[0.03] border-white/10 text-white active:bg-[#da222a]"
-                      }`}
-                  >
-                    {lang.label}
-                  </button>
-                ))}
-              </div>
-
-              <div className="flex justify-between items-end pt-6 border-t border-white/5">
-                <div className="space-y-1 text-left">
-                  <p className="text-[10px] text-gray-500 font-bold uppercase tracking-[0.2em]">
-                    Jaydeep Industries
-                  </p>
-                  <p className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em]">
-                    Since 1976
-                  </p>
-                </div>
-                <Image
-                  src="/swastik-logo-removebg-preview1.png"
-                  alt="Swastik"
-                  width={80}
-                  height={80}
-                  className="h-16 w-16 object-contain brightness-110 drop-shadow-[0_0_8px_rgba(218,34,42,0.4)]"
-                />
-              </div>
+            <div className="grid grid-cols-3 gap-3">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => {
+                    changeLanguage(lang.code);
+                    setMobileMenuOpen(false);
+                  }}
+                  className={`py-4 border font-bold uppercase text-[10px] rounded transition-all
+                    ${currentLang === lang.code
+                        ? "bg-[#da222a] border-[#da222a] text-white"
+                        : "bg-white/[0.03] border-white/10 text-white"}`}
+                >
+                  {lang.label}
+                </button>
+              ))}
             </div>
           </motion.div>
         )}

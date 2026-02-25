@@ -54,7 +54,7 @@ export default function ProfessionalAbout() {
   ];
 
   const founderStats = [
-    { icon: Briefcase, value: "50+", label: "Years of Vision", sub: "Founding to Present" },
+    { icon: Briefcase, value: "50", label: "Years of Vision", sub: "Founding to Present" },
     { icon: TrendingUp, value: "Global", label: "Market Presence", sub: "India & International" },
     { icon: Award, value: "8", label: "Export Awards", sub: "Excellence Recognized" },
     { icon: Heart, value: "100%", label: "Product Authenticity", sub: "" },
@@ -66,9 +66,9 @@ export default function ProfessionalAbout() {
       className="bg-white text-gray-950 antialiased border-t border-gray-200 overflow-hidden"
     >
             {/* 03: FOUNDER DETAILED SECTION */}
-      <div className="py-24 border-b border-gray-200">
+      <div className="py-12 border-b border-gray-200">
         <div className="mx-auto max-w-[1800px] px-6 lg:px-12">
-          <div className="flex flex-col lg:flex-row justify-between items-end gap-10 mb-20">
+          <div className="flex flex-col lg:flex-row justify-between items-end gap-10 mb-10">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="h-[3px] w-10 bg-[#da222a]" />
@@ -77,27 +77,44 @@ export default function ProfessionalAbout() {
                 </span>
               </div>
               <h2 className="text-6xl md:text-8xl font-black tracking-tighter uppercase leading-none text-gray-900">
-                The Founder
+                The Pioneer
               </h2>
             </div>
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-gray-400 max-w-sm md:text-right leading-loose border-r-4 border-gray-200 pr-6">
-              A pioneer who transformed a regional workshop into a globally recognized industrial brand through grit, precision, and unwavering vision.
-            </p>
           </div>
 
-          {/* DESKTOP: Two-column layout — portrait + story */}
-          <div className="hidden lg:grid grid-cols-12 border border-gray-200 bg-white min-h-[700px]">
-            {/* Left: Large portrait */}
-            <div className="col-span-4 border-r border-gray-200 relative overflow-hidden contrast-125">
-              <Image src="/DCD.jpeg" alt="Founder Portrait" fill className="object-cover object-top" />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent" />
-              <div className="absolute bottom-8 left-8 right-8">
-                <p className="text-[9px] font-black text-[#da222a] uppercase tracking-[0.4em] mb-2">Jaydeep Industries</p>
-                <h3 className="text-3xl font-black text-white uppercase italic tracking-tighter leading-none">Founder </h3>
-                <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mt-2">Est. 1976 · Surat, India</p>
-              </div>
-              <div className="absolute top-0 left-0 w-full h-1 bg-[#da222a]" />
-            </div>
+{/* DESKTOP: Two-column layout — portrait + story */}
+<div className="hidden lg:grid grid-cols-12 border border-gray-200 bg-white min-h-[700px] rounded-2xl overflow-hidden shadow-sm">
+  
+  {/* Left: Large portrait */}
+  <div className="col-span-4 relative overflow-hidden">
+    <Image
+      src="/DCD.jpeg"
+      alt="Founder Shri Dilipbhai Chhotubhai Desai"
+      fill
+      priority
+      className="object-cover object-[50%_18%]"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/75 via-gray-900/20 to-transparent" />
+
+    <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
+   <p className="text-[10px] font-bold text-[#da222a] uppercase tracking-[0.35em] mb-3">
+  Jaydeep Industries
+  <p className="text-gray-400 text-[11px] font-semibold uppercase tracking-widest mt-3">
+        Est. 1976 · Surat, India
+      </p>
+  </p>
+
+<h3 className="text-2xl xl:text-3xl font-black text-white uppercase tracking-[-0.01em] leading-tight">
+  Shri Dilipbhai Chhotubhai Desai
+</h3>
+
+<p className="text-sm text-gray-300 font-semibold mt-2 tracking-wide">
+  1947 — 2024
+</p>
+
+    </div>
+  </div>
 
             {/* Center: Story + Quote */}
             <div className="col-span-5 border-r border-gray-200 p-14 flex flex-col justify-between">
@@ -114,7 +131,7 @@ export default function ProfessionalAbout() {
                     His defining philosophy — that reliability must be engineered into every component, not inspected in at the end — shaped every process, every hire, and every product that left the factory floor. This principle became the DNA of Jaydeep Industries and remains at the heart of everything we do today.
                   </p>
                   <p className="text-base text-gray-500 font-medium leading-relaxed">
-  Under his stewardship, the company launched the iconic SWASTIK brand, forged technical partnerships with global leaders like GROZ-BECKERT, and earned Export Excellence Awards that brought the Jaydeep name to international markets. His legacy is not measured merely in revenue or reach — it is measured in the thousands of looms across the world that run flawlessly on Jaydeep precision.
+  Under his stewardship, the company launched the iconic Swastik brand and produced high-quality heddles using mail eyes from reputed global leaders such as Groz-Beckert, and earned Export Excellence Awards that brought the Jaydeep name to international markets. His legacy is not measured merely in revenue or reach — it is measured in the thousands of looms across the world that run flawlessly on Jaydeep precision.
 </p>
                 </div>
               </div>
@@ -143,54 +160,42 @@ export default function ProfessionalAbout() {
               ))}
             </div>
           </div>
-
-          {/* MOBILE: Redesigned founder detail — cinematic & editorial */}
+{/* MOBILE: Redesigned founder detail — cinematic & editorial */}
           <div className="lg:hidden">
 
-            {/* Hero portrait block — full bleed with editorial overlay */}
-            <div className="relative w-full aspect-[3/4] overflow-hidden contrast-90">
-              <Image src="/DCD.jpeg" alt="Founder" fill className="object-cover object-top scale-105" />
+            {/* Hero portrait block — aspect ratio changed to 2/3 for a significant height increase */}
+            <div className="relative w-full aspect-[2/3] overflow-hidden contrast-90">
+              <Image src="/DCD.jpeg" alt="Founder" fill className="object-cover object-top scale-110" />
               {/* Multi-stop gradient for depth */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/40 to-transparent" />
-              {/* Red top accent bar */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-[#da222a]" />
-              {/* Top-left label */}
-              <div className="absolute top-5 left-5 flex items-center gap-2">
-                <div className="w-5 h-[2px] bg-[#da222a]" />
-                <span className="text-[8px] font-black text-white/70 uppercase tracking-[0.4em]">Jaydeep Industries</span>
-              </div>
+              
+              
               {/* Bottom identity block */}
               <div className="absolute bottom-0 left-0 right-0 p-6 pb-8">
-                <p className="text-[9px] font-black text-[#da222a] uppercase tracking-[0.5em] mb-2"></p>
-                <h3 className="text-[2.6rem] font-black text-white uppercase italic tracking-tighter leading-[0.9] mb-3">
-                  Founder
-                </h3>
+                
                 <div className="flex items-center gap-3">
-                  <div className="h-[2px] w-8 bg-[#da222a]" />
-                  <span className="text-[9px] font-black text-white/50 uppercase tracking-[0.3em]">50+ Years of Vision</span>
                 </div>
               </div>
-              {/* Large ghost number */}
-              <span className="absolute top-6 right-5 text-[7rem] font-black text-white/5 italic leading-none pointer-events-none">01</span>
             </div>
 
-            {/* Quote strip — dark, full-width, typographically bold */}
-            <div className="bg-gray-950 px-6 py-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-1 h-full bg-[#da222a]" />
-              <Quote className="text-[#da222a]/30 w-10 h-10 mb-3" />
-              <p className="text-[1.35rem] font-black text-white uppercase italic tracking-tighter leading-[1.15] pl-2">
-                "I did not build a company. I built a standard — and a standard lives forever."
+            {/* IDENTITY BLOCK: Red accent line removed; padding adjusted for center-alignment look */}
+            <div className="bg-gray-950 px-6 py-10 relative overflow-hidden">
+              <h4 className="text-[1.6rem] font-black text-white uppercase italic tracking-tighter leading-[1.1]">
+                Shri Dilipbhai Chhotubhai Desai
+              </h4>
+              <p className="text-[11px] text-gray-400 font-bold uppercase tracking-[0.3em] mt-3">
+                1947 — 2024
               </p>
             </div>
 
             {/* Story block — clean white with strong typographic hierarchy */}
             <div className="bg-white border-b border-gray-100">
               {/* Section label */}
-              <div className="px-6 pt-8 pb-4 border-b border-gray-100 flex items-center gap-3">
+              <div className="px-6 pt-6 pb-4 border-b border-gray-100 flex items-center gap-3">
                 <div className="h-[2px] w-6 bg-[#da222a]" />
                 <span className="text-[9px] font-black text-[#da222a] uppercase tracking-[0.5em]">His Story</span>
               </div>
-              <div className="px-6 py-7 space-y-5">
+              <div className="px-6 py-4 space-y-5">
                 <p className="text-[0.9rem] text-gray-600 font-medium leading-[1.75]">
                   Beginning with nothing more than a vision for manufacturing excellence, our founder laid the cornerstone of Jaydeep Industries in 1976. With a background rooted in textile engineering and an unrelenting drive for quality, he pioneered wire healds and weaving accessories at a time when India's textile industry was rapidly expanding.
                 </p>
@@ -232,7 +237,7 @@ export default function ProfessionalAbout() {
         </div>
       </div>                
       {/* 02: PHASES SECTION */}
-      <div className="py-24 border-b border-gray-200 bg-gray-50/30">
+      <div className="py-14 border-b border-gray-200 bg-gray-50/30">
         <div className="mx-auto max-w-[1400px] px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="space-y-4">
@@ -349,10 +354,7 @@ export default function ProfessionalAbout() {
             viewport={{ once: true }}
             className="p-12 lg:p-16 border-r border-gray-200 last:border-r-0 flex flex-col items-center text-center group relative overflow-hidden"
           >
-            {/* Subtle background number for industrial feel */}
-            <span className="absolute -bottom-4 -right-2 text-8xl font-black text-gray-50 group-hover:text-red-50/50 transition-colors duration-500 italic pointer-events-none">
-              0{i + 3}
-            </span>
+            
 
             <div className="relative z-10">
               <div className="mb-6 inline-flex p-4 rounded-xl bg-gray-50 group-hover:bg-red-50 transition-colors duration-300">
@@ -367,7 +369,7 @@ export default function ProfessionalAbout() {
                 {item.sub}
               </p>
 
-              <p className="text-sm text-gray-400 font-medium max-w-[200px] leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="text-sm text-black-400 font-medium max-w-[200px] leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {item.desc}
               </p>
             </div>

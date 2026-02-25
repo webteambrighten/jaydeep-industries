@@ -23,20 +23,23 @@ type Country = {
 
 const countries: Country[] = [
   { name: "Belgium", code: "BE", lat: 50.85, lon: 4.35, img: "/partners/belgium.jpg" },
-  { name: "Canada", code: "CA", lat: 65.5, lon: -106.0, img: "/partners/canada.jpg" },
+  { name: "Canada", code: "CA", lat: 56.13, lon: -106.35, img: "/partners/canada.jpg" },
   { name: "China", code: "CN", lat: 35.86, lon: 104.19, img: "/partners/china.jpg" },
-  { name: "Egypt", code: "EG", lat: 26.82, lon: 30.8, img: "/partners/egypt.jpg" },
+  { name: "Egypt", code: "EG", lat: 26.82, lon: 30.80, img: "/partners/egypt.jpg" },
   { name: "Germany", code: "DE", lat: 51.16, lon: 10.45, img: "/partners/germany.jpg" },
-  { name: "Indonesia", code: "ID", lat: -30.5, lon: 120.0, img: "/partners/indonesia.jpg" },
+  { name: "Indonesia", code: "ID", lat: -0.79, lon: 113.92, img: "/partners/indonesia.jpg" },
   { name: "Italy", code: "IT", lat: 41.87, lon: 12.56, img: "/partners/italy.jpg" },
-  { name: "Japan", code: "JP", lat: 36.2, lon: 138.25, img: "/partners/japan.jpg" },
+  { name: "Japan", code: "JP", lat: 36.20, lon: 138.25, img: "/partners/japan.jpg" },
   { name: "South Korea", code: "KR", lat: 35.91, lon: 127.77, img: "/partners/korea.jpg" },
-  { name: "Mexico", code: "MX", lat: 20.8, lon: -110.3, img: "/partners/mexico.jpg" },
-  { name: "Tunisia", code: "TN", lat: 34.89, lon: 7.84, img: "/partners/tunisia.jpg" },
+  { name: "Mexico", code: "MX", lat: 23.63, lon: -102.55, img: "/partners/mexico.jpg" },
+  { name: "Tunisia", code: "TN", lat: 33.89, lon: 9.54, img: "/partners/tunisia.jpg" },
   { name: "Turkey", code: "TR", lat: 38.96, lon: 35.24, img: "/partners/turkey.jpg" },
   { name: "UAE", code: "AE", lat: 23.42, lon: 53.85, img: "/partners/uae.jpg" },
-  { name: "United Kingdom", code: "UK", lat: 65.6, lon: -4.8, img: "/partners/uk.jpg" },
-  { name: "United States", code: "US", lat: 44.2, lon: -96.5, img: "/partners/usa.jpg" },
+  { name: "United Kingdom", code: "GB", lat: 55.38, lon: -3.44, img: "/partners/uk.jpg" },
+  { name: "United States", code: "US", lat: 37.09, lon: -95.71, img: "/partners/usa.jpg" },
+  { name: "Russia", code: "RU", lat: 75.52, lon: 95.32, img: "/partners/russia.jpg" },
+  { name: "Sri Lanka", code: "LK", lat: -7.87, lon: 82.77, img: "/partners/srilanka.jpg" },
+  { name: "Australia", code: "AU", lat: -55.27, lon: 135.77, img: "/partners/australia.jpg" },
 ];
 
 export default function GlobalMapSection() {

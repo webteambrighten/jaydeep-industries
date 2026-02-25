@@ -12,8 +12,8 @@ export default function WhatsAppButton() {
       transition={{ duration: 0.5, delay: 0.6 }}
       className="fixed bottom-6 right-6 z-50"
     >
-      <Link
-        href="https://wa.me/919429621290"
+      <Link 
+        href="https://wa.me/919825311311"
         target="_blank"
         className="flex items-center gap-3
                    bg-[#25D366] text-white

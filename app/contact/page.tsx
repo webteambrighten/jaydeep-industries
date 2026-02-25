@@ -187,7 +187,7 @@ export default function ContactPage() {
                       Address
                     </p>
                     <p className="font-bold">
-                      Plot no. D2/92-95 & E1/96-99, Bhagwati Nagar Industrial Estate, Bhestan, Surat - 395023, Gujarat, India
+                      Plot no. D2/92-95 & E1/96-99, Bhagwati Nagar Industrial Estate, Near Navjivan Automobile Showroom, Bhestan, Surat - 395023 (Gujarat) India
                     </p>
                   </div>
                 </li>
