@@ -25,145 +25,76 @@ export default function TwinWireHealdsPage() {
     {
       title: "O Type — Standard Range",
       data: [
-        { family: "oval", no: "1010 R", thickness: "0.3 / 0.4", inner: "2.6 x 2.9", path: "" },
-        { family: "oval", no: "1015 R", thickness: "0.35 / 0.5 / 0.4", inner: "3.2 x 1.3", path: "" },
-        { family: "oval", no: "1020 R", thickness: "0.35 / 0.5", inner: "4.0 x 1.5", path: "" },
-        { family: "oval", no: "328 R", thickness: "0.5 / 0.9", inner: "4.2 x 2.3", path: "" },
-        { family: "oval", no: "355 R", thickness: "0.55 / 0.8", inner: "5.2 x 2.3", path: "" },
-        { family: "oval", no: "380 R", thickness: "0.6 / 0.8 / 1.2", inner: "5.6 x 2.7", path: "" },
-        { family: "oval", no: "385 R", thickness: "0.7 / 1.0", inner: "6.2 x 3.4", path: "" },
-        { family: "oval", no: "1080 R", thickness: "0.8 / 1.2", inner: "6.6 x 3.9", path: "" },
-        { family: "oval", no: "390 R", thickness: "1.0 / 1.4", inner: "8.0 x 4.2", path: "" },
-        { family: "oval", no: "420 R", thickness: "1.0 / 1.4", inner: "9.0 x 4.8", path: "" },
-        { family: "oval", no: "450 R", thickness: "1.4", inner: "10.0 x 6.3", path: "" },
-        { family: "oval", no: "480 R", thickness: "1.5", inner: "13.5 x 7.5", path: "" },
+        { family: "oval", no: "1010 R", thickness: "0.3 / 0.4", inner: "2.6 x 2.9" },
+        {
+          family: "oval",
+          no: "1015 R",
+          thickness: "0.35 / 0.5 / 0.4",
+          inner: "3.2 x 1.3",
+        },
+        { family: "oval", no: "1020 R", thickness: "0.35 / 0.5", inner: "4.0 x 1.5" },
+        { family: "oval", no: "328 R", thickness: "0.5 / 0.9", inner: "4.2 x 2.3" },
+        { family: "oval", no: "355 R", thickness: "0.55 / 0.8", inner: "5.2 x 2.3" },
+        { family: "oval", no: "380 R", thickness: "0.6 / 0.8 / 1.2", inner: "5.6 x 2.7" },
+        { family: "oval", no: "385 R", thickness: "0.7 / 1.0", inner: "6.2 x 3.4" },
+        { family: "oval", no: "1080 R", thickness: "0.8 / 1.2", inner: "6.6 x 3.9" },
+        { family: "oval", no: "390 R", thickness: "1.0 / 1.4", inner: "8.0 x 4.2" },
+        { family: "oval", no: "420 R", thickness: "1.0 / 1.4", inner: "9.0 x 4.8" },
+        { family: "oval", no: "450 R", thickness: "1.4", inner: "10.0 x 6.3" },
+        { family: "oval", no: "480 R", thickness: "1.5", inner: "13.5 x 7.5" },
       ],
     },
     {
       title: "O Type — Special Oval Range",
       data: [
-        { family: "oval", no: "2810 R", thickness: "0.4", inner: "2.8 x 1.2", path: "" },
-        { family: "oval", no: "3012 R", thickness: "0.4 / 0.45", inner: "3.0 x 1.2", path: "" },
-        { family: "oval", no: "314 R", thickness: "0.4", inner: "3.2 x 1.4", path: "" },
-        { family: "oval", no: "3815 R", thickness: "0.4", inner: "3.8 x 1.5", path: "" },
-        { family: "oval", no: "6740 R", thickness: "1.4", inner: "6.7 x 4.0", path: "" },
-        { family: "oval", no: "8142 R", thickness: "1.4", inner: "8.1 x 4.2", path: "" },
+        { family: "oval", no: "2810 R", thickness: "0.4", inner: "2.8 x 1.2" },
+        { family: "oval", no: "3012 R", thickness: "0.4 / 0.45", inner: "3.0 x 1.2" },
+        { family: "oval", no: "314 R", thickness: "0.4", inner: "3.2 x 1.4" },
+        { family: "oval", no: "3815 R", thickness: "0.4", inner: "3.8 x 1.5" },
+        { family: "oval", no: "6740 R", thickness: "1.4", inner: "6.7 x 4.0" },
+        { family: "oval", no: "8142 R", thickness: "1.4", inner: "8.1 x 4.2" },
       ],
     },
     {
       title: "C Type — Heavy Range",
       data: [
-        { family: "circle", no: "100 C", thickness: "2.2", inner: "12.0", path: "" },
-        { family: "oval", no: "140 C", thickness: "2.2", inner: "7.5 x 4.0", path: "" },
-        { family: "oval", no: "150 C", thickness: "2.2", inner: "10.0 x 6.0", path: "" },
-        { family: "oval", no: "160 C", thickness: "2.2", inner: "13.5 x 7.5", path: "" },
-        { family: "oval", no: "200 C", thickness: "2.2", inner: "19.0 x 11.0", path: "" },
+        { family: "circle", no: "100 C", thickness: "2.2", inner: "12.0" },
+        { family: "oval", no: "140 C", thickness: "2.2", inner: "7.5 x 4.0" },
+        { family: "oval", no: "150 C", thickness: "2.2", inner: "10.0 x 6.0" },
+        { family: "oval", no: "160 C", thickness: "2.2", inner: "13.5 x 7.5" },
+        { family: "oval", no: "200 C", thickness: "2.2", inner: "19.0 x 11.0" },
       ],
     },
     {
       title: "O Type — Flat Slot Range",
       data: [
-        { family: "flat", no: "360 R", thickness: "0.4 / 0.55", inner: "5.5 x 1.2", path: "" },
-        { family: "flat", no: "370 R", thickness: "0.6", inner: "6.0 x 1.5", path: "" },
-        { family: "flat", no: "395 R", thickness: "1.0", inner: "8.3 x 2.5", path: "" },
-        { family: "flat", no: "440 R", thickness: "1.0", inner: "10.5 x 2.8", path: "" },
-        { family: "flat", no: "8040 R", thickness: "1.0 / 1.2", inner: "8.0 x 4.0", path: "" },
-        { family: "flat", no: "1340 R", thickness: "1.0", inner: "13.0 x 4.0", path: "" },
+        { family: "flat", no: "360 R", thickness: "0.4 / 0.55", inner: "5.5 x 1.2" },
+        { family: "flat", no: "370 R", thickness: "0.6", inner: "6.0 x 1.5" },
+        { family: "flat", no: "395 R", thickness: "1.0", inner: "8.3 x 2.5" },
+        { family: "flat", no: "440 R", thickness: "1.0", inner: "10.5 x 2.8" },
+        { family: "flat", no: "8040 R", thickness: "1.0 / 1.2", inner: "8.0 x 4.0" },
+        { family: "flat", no: "1340 R", thickness: "1.0", inner: "13.0 x 4.0" },
       ],
     },
     {
       title: "O Type — Gauge Series",
       data: [
-        { family: "circle", no: "31 / 0", thickness: "0.5", inner: "3.1", path: "" },
-        { family: "circle", no: "50 / 0", thickness: "0.8 / 1.4 / 1.6", inner: "5.0", path: "" },
-        { family: "circle", no: "65 / 0", thickness: "1.4", inner: "6.5", path: "" },
-        { family: "circle", no: "80 / 0", thickness: "1.4", inner: "8.0", path: "" },
-        { family: "circle", no: "100 / 0", thickness: "1.6", inner: "10.0", path: "" },
+        { family: "circle", no: "31 / 0", thickness: "0.5", inner: "3.1" },
+        { family: "circle", no: "50 / 0", thickness: "0.8 / 1.4 / 1.6", inner: "5.0" },
+        { family: "circle", no: "65 / 0", thickness: "1.4", inner: "6.5" },
+        { family: "circle", no: "80 / 0", thickness: "1.4", inner: "8.0" },
+        { family: "circle", no: "100 / 0", thickness: "1.6", inner: "10.0" },
       ],
     },
     {
       title: "SR Type — Slot Range",
       data: [
-        { family: "slot", no: "312 SR", thickness: "0.4 / 0.45", inner: "3.0 x 1.2", path: "" },
-        { family: "slot", no: "518 SR", thickness: "0.45", inner: "5.0 x 1.8", path: "" },
+        { family: "slot", no: "312 SR", thickness: "0.4 / 0.45", inner: "3.0 x 1.2" },
+        { family: "slot", no: "518 SR", thickness: "0.45", inner: "5.0 x 1.8" },
       ],
     },
   ];
 
-  const EyeShape = ({ family, inner = "", path = "" }: { family: string; inner?: string; path?: string }) => {
-    const strokeWidth = 3;
-    const colorClass = "text-gray-900 group-hover:text-[#da222a] transition-colors";
-    const CENTER = 60;
-
-    // If a custom SVG path is provided by the user, render it directly!
-    if (path) {
-      return (
-        <svg width="45" height="45" viewBox="0 0 120 120" className={colorClass}>
-          {/* We assume the provided custom path draws near the center. */}
-          <path d={path} fill="none" stroke="currentColor" strokeWidth={strokeWidth} />
-        </svg>
-      );
-    }
-
-    // Parse the inner dimensions mm directly into pixels to exactly match the physical product shape
-    let w = 4, h = 2;
-    if (inner) {
-      const parts = inner.split("x").map(s => parseFloat(s.trim()));
-      if (parts.length === 2) {
-        // Assume larger number is width to match brochure's horizontal drawings
-        w = Math.max(parts[0], parts[1]);
-        h = Math.min(parts[0], parts[1]);
-      } else if (parts.length === 1 && !isNaN(parts[0])) {
-        w = parts[0];
-        h = parts[0];
-      }
-    }
-
-    // Mathematical scaling to fit perfectly inside the SVG and scale up linearly
-    const baseScale = 8;
-    const mult = 2.4;
-    const rx = Math.min(baseScale + w * mult, 55);
-    const ry = Math.min(baseScale + h * mult, 55);
-
-    return (
-      <svg width="45" height="45" viewBox="0 0 120 120" className={colorClass}>
-        {family === "oval" && (
-          <ellipse cx={CENTER} cy={CENTER} rx={rx} ry={ry} fill="none" stroke="currentColor" strokeWidth={strokeWidth} />
-        )}
-        {family === "slot" && (
-          <polygon
-            points={`
-              ${CENTER - rx},${CENTER} 
-              ${CENTER - rx * 0.6},${CENTER - ry} 
-              ${CENTER + rx * 0.6},${CENTER - ry} 
-              ${CENTER + rx},${CENTER} 
-              ${CENTER + rx * 0.6},${CENTER + ry} 
-              ${CENTER - rx * 0.6},${CENTER + ry}
-            `}
-            fill="none"
-            stroke="currentColor"
-            strokeLinejoin="round"
-            strokeWidth={strokeWidth}
-          />
-        )}
-        {family === "circle" && (
-          <circle cx={CENTER} cy={CENTER} r={rx} fill="none" stroke="currentColor" strokeWidth={strokeWidth} />
-        )}
-        {family === "flat" && (
-          <rect
-            x={CENTER - rx}
-            y={CENTER - ry}
-            width={rx * 2}
-            height={ry * 2}
-            rx={Math.min(ry, rx)}
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={strokeWidth}
-          />
-        )}
-      </svg>
-    );
-  };
 
   return (
     <div className="font-heading bg-white min-h-screen">
@@ -255,18 +186,14 @@ export default function TwinWireHealdsPage() {
                     <Table>
                       <TableHeader className="bg-gray-50 h-12">
                         <TableRow>
-                          <TableHead className="w-20 text-center text-xs font-black uppercase border-r text-gray-900">Type</TableHead>
                           <TableHead className="text-xs font-black uppercase border-r px-4 text-gray-900">No.</TableHead>
                           <TableHead className="text-xs font-black uppercase border-r px-4 text-gray-900">Thick</TableHead>
                           <TableHead className="text-xs font-black uppercase px-4 text-gray-900">Inner Ø</TableHead>
                         </TableRow>
                       </TableHeader>
                       <TableBody>
-                        {group.data.map((item, index) => (
+                        {group.data.map((item: any, index: number) => (
                           <TableRow key={index} className="group hover:bg-red-50/20 h-16 transition-colors border-b last:border-0">
-                            <TableCell className="border-r p-2 text-center">
-                              <EyeShape family={item.family} inner={item.inner} path={item.path} />
-                            </TableCell>
                             <TableCell className="font-black text-sm md:text-base border-r px-4 text-gray-900">{item.no}</TableCell>
                             <TableCell className="font-bold text-gray-500 text-sm border-r px-4">{item.thickness}</TableCell>
                             <TableCell className="font-black text-sm md:text-base px-4 whitespace-nowrap text-gray-900">
