@@ -1,0 +1,237 @@
+{
+  "nav_about": "About Us",
+  "nav_products": "Weaving Solutions",
+  "nav_feedback": "Feedback & Inquiry",
+  "nav_success": "Success Stories",
+  "nav_contact": "Contact Us",
+
+  "hero_badge": "Reliability • Quality • After-Sales Service",
+  "hero_title_1": "Precision",
+  "hero_title_2": "Twin Healds",
+  "hero_title_3": "for Superior Weaving",
+  "hero_innovation_title": "Innovation Range",
+  "hero_innovation_items": "Nickel Plated Wire Healds • Flat Steel Healds • Drop Wires",
+  "hero_compatibility_title": "Loom Compatibility",
+  "hero_compatibility_items": "Sulzer • Rapier • Dornier • Water Jet • Carpet • Jute • Felt • Terry-Towel",
+  "hero_scroll": "Scroll",
+
+  "about_legacy_badge": "The SWASTIK Legacy",
+  "about_since": "Since 1976",
+  "about_years_number": "50+",
+  "about_years_label": "Years of Excellence",
+  "about_title_part1": "Reliability. Quality.",
+  "about_title_part2": "Service.",
+  "about_description": "Established in 1976, Jaydeep Industries has been at the forefront of the textile industry. Our SWASTIK brand products are trusted globally for their precision, durability, and superior performance on high-speed looms.",
+  "about_feature_1_title": "Advanced Manufacturing",
+  "about_feature_1_desc": "Equipped with state-of-the-art precision machinery for high-tolerance weaving accessories.",
+  "about_feature_2_title": "Engineering Expertise",
+  "about_feature_2_desc": "A specialized workforce dedicated to innovation in twin wire and metal reed technology.",
+  "about_feature_3_title": "Global Export Network",
+  "about_feature_3_desc": "Serving textile hubs across international markets with Govt. recognized excellence.",
+  "about_feature_4_title": "Uncompromising Quality",
+  "about_feature_4_desc": "Rigorous testing protocols ensuring durability and superior surface finish.",
+
+  "products_badge": "Industrial Showcase",
+  "products_title_1": "Product",
+  "products_title_2": "Range.",
+  "products_button": "Technical Specs",
+  "product_1_name": "Twin Inserted Twisted Wire Healds",
+  "product_1_tagline": "Nickel-Plated Precision",
+  "product_1_description": "Engineered for high-speed weaving, featuring uniform nickel deposit (SWG 18–34) for maximum corrosion resistance and low-friction performance.",
+  "product_1_feat_1": "Corrosion Resistant",
+  "product_1_feat_2": "Low Friction",
+  "product_1_feat_3": "High Tensile",
+  "product_2_name": "Precision Metal Reeds",
+  "product_2_tagline": "High-Count Accuracy",
+  "product_2_description": "Available in counts from 4 to 280, ensuring absolute dimensional accuracy and superior surface finish for delicate fabrics.",
+  "product_2_feat_1": "Dimensional Accuracy",
+  "product_2_feat_2": "Custom Spacing",
+  "product_2_feat_3": "Loom-Specific",
+
+  "cta_title": "Let’s Build Success Together",
+  "cta_description": "Whether you have an inquiry, need a custom solution, or want to provide feedback, our team is here to assist you. Reach out today!",
+  "cta_button_inquiry": "Send an Inquiry",
+  "cta_button_call": "Call Us Now",
+
+  "ach_badge": "Accreditations & Recognition",
+  "ach_title_1": "Proven",
+  "ach_title_2": "Excellence.",
+  "ach_title_export": "Export Excellency Award",
+  "ach_title_national": "National Export Award",
+  "ach_title_western": "Western Region Export Award",
+  "ach_auth_chamber": "Chamber of Commerce",
+  "ach_auth_eepc": "EEPC India",
+  "ach_footer": "Govt. Recognized Achievement",
+
+  "footer_tagline": "Weaving Excellence Since 1976",
+  "footer_description": "Leading manufacturer of precision weaving accessories, committed to quality and innovation for the global textile industry.",
+  "footer_quick_links": "Quick Links",
+  "footer_about": "About Us",
+  "footer_products": "Our Products",
+  "footer_contact": "Contact Us",
+  "footer_contact_title": "Contact Info",
+  "footer_address": "Plot no. D2/92-95 & E1/96-99, Bhagwati Nagar Industrial Estate, Near Navjivan Automobile Showroom, Bhestan, Surat - 395023 (Gujarat) India",
+  "footer_rights": "All rights reserved.",
+
+  "aboutpage_hero_title": "Jaydeep Industries",
+  "aboutpage_hero_desc": "Discover our journey of excellence, our core values, and our commitment to innovation in the textile industry.",
+  "aboutpage_founder_badge": "Legacy of Leadership",
+  "aboutpage_founder_title_1": "Our",
+  "aboutpage_founder_title_2": "Founder.",
+  "aboutpage_founder_quote": "Reliability is manufactured into every product.",
+  "aboutpage_founder_desc": "Jaydeep Industries has grown into a globally trusted name in the weaving accessories industry. Through continuous innovation, we set new benchmarks in weaving efficiency across the world.",
+  "aboutpage_founder_established": "Established in 1976",
+  "aboutpage_founder_group": "Jaydeep Industries Group",
+  "aboutpage_founder_years": "48+ Years",
+  "aboutpage_phase_badge": "Evolutionary Path",
+  "aboutpage_phase_title": "Phases of Jaydeep.",
+
+  "phase_1_year": "1976",
+  "phase_1_title": "FOUNDATION",
+  "phase_1_subtitle": "Manufacturing Genesis",
+  "phase_1_desc": "Jaydeep Industries was established with a strict commitment to reliability. What began as a specialized unit quickly became a trusted name for weaving accessories across India.",
+
+  "phase_2_year": "1985—1999",
+  "phase_2_title": "INNOVATION",
+  "phase_2_subtitle": "The SWASTIK Era",
+  "phase_2_desc": "Launched the flagship ‘SWASTIK’ brand. Developed high-quality Nickel Plated Wire Healds featuring GROZ-BECKERT components for high-speed looms.",
+
+  "phase_3_year": "2000—2010",
+  "phase_3_title": "EXPANSION",
+  "phase_3_subtitle": "Technical Diversity",
+  "phase_3_desc": "Expanded portfolio to include Flat Steel Healds and Drop Wires. Provided full-scale solutions for Sulzer, Rapier, and specialized industrial looms.",
+
+  "phase_4_year": "2011—PRESENT",
+  "phase_4_title": "LEADERSHIP",
+  "phase_4_subtitle": "Global Benchmarks",
+  "phase_4_desc": "Global launch of Metal Reeds and receipt of multiple Export Excellence Awards. Currently serving 25+ international markets with rigorous quality management.",
+
+  "aboutpage_team_title": "The Jaydeep Team.",
+  "aboutpage_team_desc": "A specialized workforce dedicated to precision manufacturing and international industrial standards.",
+
+  "aboutpage_vision_title": "Our Vision.",
+  "aboutpage_vision_desc": "To be a globally trusted manufacturer upholding values of precision, quality, and enduring relationships.",
+
+  "aboutpage_mission_title": "Our Mission.",
+  "aboutpage_mission_desc": "Blending traditional expertise with modern automation to deliver consistent, first-rate industrial quality.",
+
+  "aboutpage_cert_1_label": "50+ Years Experience",
+  "aboutpage_cert_1_sub": "Manufacturing Mastery",
+
+  "aboutpage_cert_2_label": "Quality Assured",
+  "aboutpage_cert_2_sub": "Zero-Defect Protocols",
+
+  "aboutpage_cert_3_label": "Global Standards",
+  "aboutpage_cert_3_sub": "International Benchmarks",
+
+  "contact_hero_title": "Contact Us",
+"contact_hero_desc": "Get in touch with Jaydeep Industries for inquiries, support, or feedback.",
+
+"contact_heading": "Contact Jaydeep Industries",
+"contact_subheading": "We are here to assist you with any inquiries, support, or feedback you may need.",
+
+"contact_form_title": "Send Us a Message",
+"contact_success": "Message sent successfully! We'll get back to you soon.",
+"contact_error": "Failed to send message. Please try again.",
+
+"contact_label_name": "Your Name",
+"contact_label_email": "Your Email",
+"contact_label_subject": "Subject",
+"contact_label_message": "Your Message",
+
+"contact_btn_send": "Send Message",
+"contact_btn_sending": "Sending...",
+
+"contact_details_title": "Our Contact Details",
+"contact_email_label": "Email",
+"contact_phone_label": "Phone",
+"contact_address_label": "Address",
+
+"contact_hours_title": "Business Hours",
+"contact_hours_days": "Monday - Saturday:",
+"contact_hours_time": "11:00 AM - 5:00 PM",
+
+"contact_map_title": "Find Us on Map",
+
+"feedback_hero_title": "Feedback & Inquiry",
+"feedback_hero_desc": "Provide your feedback or send us an inquiry.",
+
+"feedback_heading": "Your Feedback Matters to Us",
+"feedback_subheading": "At Jaydeep Industries, we are constantly striving to improve. Your feedback helps us enhance our products, services, and overall customer experience.",
+
+"feedback_form_title": "Share Your Thoughts",
+
+"feedback_success": "Thank you for your feedback! We'll review it carefully.",
+"feedback_error": "Sorry, there was an error submitting your feedback. Please try again.",
+
+"feedback_label_name": "Your Name",
+"feedback_label_email": "Your Email",
+"feedback_label_type": "Type of Feedback",
+"feedback_label_message": "Your Message",
+
+"feedback_type_general": "General Feedback",
+"feedback_type_product": "Product Suggestion",
+"feedback_type_service": "Service Improvement",
+"feedback_type_complaint": "Complaint",
+"feedback_type_other": "Other",
+
+"feedback_btn_submit": "Submit Feedback",
+"feedback_btn_submitting": "Submitting...",
+
+"feedback_importance_title": "Why Your Feedback is Important",
+
+"feedback_point1_title": "Continuous Improvement",
+"feedback_point1_desc": "Your insights directly contribute to the ongoing refinement of our industrial offerings.",
+
+"feedback_point2_title": "Customer Satisfaction",
+"feedback_point2_desc": "We use your comments to ensure our services meet and exceed your professional expectations.",
+
+"feedback_point3_title": "Innovation & Growth",
+"feedback_point3_desc": "New ideas and suggestions help us innovate and expand our manufacturing capabilities.",
+
+"products_hero_title": "Our Products",
+"products_hero_desc": "Explore the full range of products offered by Jaydeep Industries.",
+
+"products_page_heading": "Our Comprehensive Product Range",
+"products_page_subheading": "Explore our diverse portfolio of industrial products, engineered to meet the highest standards of quality and performance across various sectors.",
+
+"products_btn_view": "View Details",
+
+"product_twin_name": "Twin Inserted Twisted Wire Healds",
+"product_twin_desc": "Manufactured in multiple wire gauges (SWG 18–34) and lengths (100–1000 mm), these healds are precision-engineered for weaving efficiency. The nickel plating provides a lustrous finish, uniform deposit, and superior corrosion resistance.",
+
+"product_reed_name": "Metal Reeds",
+"product_reed_desc": "A complete range of metal reeds for modern looms, including Sulzer, Dornier, Rapier, Ruti, Water Jet, and Warping Reeds. Available in counts from 4 to 280, with precise dimensions, they ensure excellent fabric quality and long operational life.",
+
+"global_badge": "Global Presence",
+"global_title_1": "Engineered Reliability Across",
+"global_title_2": "International Markets",
+"global_currently_viewing": "Currently Viewing",
+"global_country_desc": "Jaydeep Industries provides precision-engineered weaving solutions across",
+"global_tap_hint": "Tap a country below to view details",
+
+"nav_home": "Home",
+"nav_about_short": "About",
+"nav_products_short": "Product",
+"nav_contact_short": "Contact",
+"nav_menu_title": "Navigation Menu",
+"footer_brand": "Jaydeep Industries",
+
+"aboutpage_slide_hint": "Slide to explore",
+
+"aboutpage_founder_story_badge": "His Story",
+"aboutpage_founder_award_title": "Multiple Export Excellence Awards",
+"aboutpage_founder_award_sub": "Recognized by the Government of India",
+
+"aboutpage_founder_mobile_years": "50+ Years of Vision",
+
+"aboutpage_cert_1_desc": "Five decades of engineered reliability.",
+"aboutpage_cert_2_desc": "Rigorous testing for high-speed weaving.",
+"aboutpage_cert_3_desc": "Serving 25+ global industrial markets.",
+
+"aboutpage_stat_years": "Years of Vision",
+"aboutpage_stat_presence": "Market Presence",
+"aboutpage_stat_awards": "Export Awards",
+"aboutpage_stat_authenticity": "Product Authenticity"
+
+}
